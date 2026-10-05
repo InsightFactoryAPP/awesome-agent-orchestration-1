@@ -21,6 +21,7 @@ Entries say what a project does, not what it markets, and carry its license and 
 - Many coding agents in parallel, each in its own Git worktree, with PR and CI state on one board: Agent Orchestrator.
 - Plan, build, and review loops in isolated worktrees (early preview): Fusion.
 - Parallel agent sessions in a terminal, one worktree each: Claude Squad.
+- Kanban tasks run by CLI coding agents, one Git worktree per task, with receipts and typed merge lanes: YYLO.
 
 ## Agent company / control planes
 
@@ -32,6 +33,7 @@ Entries say what a project does, not what it markets, and carry its license and 
 - [Agent Orchestrator](https://github.com/Untrivial-ai/agent-orchestrator) - Apache-2.0. Local daemon and desktop app that spawns coding agents (Claude Code, Codex, Cursor, opencode, and others) into per-task Git worktrees, with an orchestrator agent and a board of PR, CI, and review state. Ticket intake is behind a flag.
 - [Fusion](https://github.com/Runfusion/Fusion) - MIT, early preview. Software factory that runs plan, build, and review loops in isolated worktrees, with workflows and a dashboard, against any model.
 - [Claude Squad](https://github.com/smtg-ai/claude-squad) - AGPL-3.0. Terminal app on tmux that runs Claude Code, Codex, Gemini, Aider, and other CLI agents in parallel, one Git worktree and branch per session. It manages sessions only: no tickets and no run log.
+- [YYLO](https://github.com/yylo-dev/yylo) - MIT, pre-1.0 (npm @yylo/cli). Command-line orchestrator that runs Claude Code, Codex, Cursor, Gemini, and Pi on Kanban tasks, each task in its own Git worktree, with receipt-backed run records and typed task, validation, and merge boundaries. Ledger and benchmark ship as separate repos.
 
 ## Related: observability
 
